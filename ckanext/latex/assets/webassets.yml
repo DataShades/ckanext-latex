@@ -7,12 +7,16 @@ latex-js:
   extra:
     preload:
       - base/main
+      - latex/katex_js
 
 latex-css:
   filter: cssrewrite
   output: ckanext-latex/%(version)s-latex.css
   contents:
-    - css/latex.css
+    - styles/latex.css
+  extra:
+    preload:
+      - latex/katex_css
 
 katex_js:
   contents:

@@ -25,7 +25,7 @@ class LatexPlugin(plugins.SingletonPlugin):
 
     def update_config(self, config_):
         toolkit.add_template_directory(config_, "templates")
-        toolkit.add_public_directory(config_, "public")
+        toolkit.add_public_directory(config_, "assets")
         toolkit.add_resource("assets", "latex")
 
     
