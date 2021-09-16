@@ -3,12 +3,12 @@ ckan.module("latex-parse-form", function ($) {
   return {
     options: {
       previewPlaceholder: "Preview for the LaTeX input",
-      previewId: "field-latex-preview",
+      previewIdentifier: "field-latex-preview",
       throwOnError: false,
     },
     initialize: function () {
       this.input = this.el[0]
-      this.previewEl = document.querySelector(`#${this.options.previewId}`);
+      this.previewEl = document.querySelector(`#${this.options.previewIdentifier}`);
 
       if (!this.previewEl) {
         return;
