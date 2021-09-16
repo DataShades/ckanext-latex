@@ -9,6 +9,10 @@ ckan.module("latex-parse-form", function ($) {
     initialize: function () {
       this.input = this.el[0]
       this.previewEl = document.querySelector(`#${this.options.previewId}`);
+
+      if (!this.previewEl) {
+        return;
+      }
       
       this.input.addEventListener("input", (e) => {
         this.parseTex(e.target.value)
