@@ -32,4 +32,4 @@ dev = ["pytest-ckan", "ckanext-toolbelt", "requests-mock"]
 Homepage = "https://github.com/DataShades/ckanext-latex"
 
 [project.entry-points."ckan.plugins"]
-charts_view = "ckanext.latex.plugin:LatexPlugin"
+latex = "ckanext.latex.plugin:LatexPlugin"
